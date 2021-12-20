@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nomad-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nomad-lab-{{ version }}.tar.gz
   sha256: fefffdf46fdf272d5861b84eaab4daf4b98e1cd2d449582eca8afa3b4ce1efe0
 
 build:
