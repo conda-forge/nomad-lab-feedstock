@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nomad-lab-{{ version }}.tar.gz
-  sha256: d0f9c0a0ff332f0819264e550a6a85d01f21b3f15b69558d738a101b37b056d0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nomad-{{ version }}.tar.gz
+  sha256: fefffdf46fdf272d5861b84eaab4daf4b98e1cd2d449582eca8afa3b4ce1efe0
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
