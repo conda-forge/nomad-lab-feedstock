@@ -48,7 +48,7 @@ requirements:
 
 test:
   imports:
-    - nomad_lab
+    - nomad
   commands:
     - pip check
     - nomad --help
