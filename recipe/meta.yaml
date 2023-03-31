@@ -19,7 +19,7 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3.9
     - fastentrypoints
     - numpy
     - pip
@@ -44,7 +44,7 @@ requirements:
     - pint
     - pip
     - pydantic
-    - python
+    - python >=3.9
     - python-keycloak
     - pytz
     - pyyaml
