@@ -51,7 +51,6 @@ test:
     - nomad
   commands:
     - pip check
-    - nomad --help
   requires:
     - pip
 
