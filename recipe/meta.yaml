@@ -1,5 +1,5 @@
 {% set name = "nomad-lab" %}
-{% set version = "1.1.7" %}
+{% set version = "1.1.9" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nomad-lab-{{ version }}.tar.gz
-  sha256: 2abaea8c1991cb2fe658acd8048ac882edd32c2fb9c558a0d7f1f243752e85c3
+  sha256: 56d09dc011049d6b1b1019db6a17fa27460cc91bf4ea91545ebe86d6ddcd5aca
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
