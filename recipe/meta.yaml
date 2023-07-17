@@ -59,6 +59,7 @@ requirements:
     - scikit-learn >=1.0.2
     - toposort
     - openpyxl >=3.0.0
+    - emmet-core <=0.57.0  # other versions are incompatible to pytmatgen
 
 test:
   imports:
