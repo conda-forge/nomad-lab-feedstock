@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nomad-lab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad-lab-{{ version }}.tar.gz
   sha256: a50b4e2c5f3c25de95530c160b049bd44406dec0109cc26ffd2afa1feb7cec7b
 
 build:
@@ -14,16 +14,16 @@ build:
     - nomad = nomad.cli:run_cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=1.22.4,<1.23.dev0
     - nptyping >=1.4.4,<1.5.dev0
     - pandas >=1.3.5,<2.0.0
@@ -68,6 +68,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://nomad-lab.eu/
