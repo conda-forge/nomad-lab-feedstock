@@ -1,5 +1,5 @@
 {% set name = "nomad-lab" %}
-{% set version = "1.3.16" %}
+{% set version = "1.3.17" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6078a8cd3481bdbe0b23ae0f16dde6591a7e84fae6f8d5a8d0a339b329c3764b
+  sha256: 2651fe88c988d9437be4f3e74b9987bfbc48c375f063242ba6a3d8826ebde9df
 
 build:
   entry_points:
