@@ -1,0 +1,21 @@
+From 51e9fc339817abbe6e773dc7130b84dde20180e8 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Wed, 22 Oct 2025 11:47:16 +0200
+Subject: [PATCH] Update pyproject.toml
+
+---
+ pyproject.toml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index d1ff6b9..044523c 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -35,7 +35,6 @@ dependencies = [
+     'pandas>=2',
+     'pint>=0.23',
+     'plotly<6', # version 6.0.0 not fully compatible with our GUI
+-    'py-spy', # for on-server profiling
+     'pydantic>=2',
+     'pyinstrument', # for endpoint profiling
+     'pymatgen>=2023.5.10',
