@@ -1,5 +1,5 @@
 {% set name = "nomad-lab" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5868a735ed9a328c1ce3b8e7a4a83b601323a20eda685de317456387df83f19e
+  sha256: 0349b342d54bf04e52637ddbc6944562af7050fdc3d67f1940a689dbb0259fbe
   patches:
     - pyspy.patch
 
@@ -61,6 +61,7 @@ requirements:
     - scipy >=1.7.1
     - unidecode
     - xarray >=0.20.2
+    - json_stream
 
 test:
   imports:
