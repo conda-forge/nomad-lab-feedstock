@@ -65,6 +65,7 @@ requirements:
     - json_stream
     - pathvalidate
     - fsspec
+    - molid
 
 test:
   imports:
