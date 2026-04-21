@@ -1,5 +1,5 @@
 {% set name = "nomad-lab" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0349b342d54bf04e52637ddbc6944562af7050fdc3d67f1940a689dbb0259fbe
+  sha256: f3effff6f14c2fde0aef7c513ac6572aee8d07b3f043c58647148429ea029808
   patches:
     - pyspy.patch
 
@@ -32,6 +32,7 @@ requirements:
     - cachetools >=4.2.4
     - click >=7.1.2
     - docstring_parser >=0.12
+    - elasticsearch >=7.17.3
     - elasticsearch-dsl >=7,<8
     - h5py >=3.6.0
     - httpx >=0.23.3,<0.28
@@ -62,6 +63,9 @@ requirements:
     - unidecode
     - xarray >=0.20.2
     - json_stream
+    - pathvalidate
+    - fsspec
+    - molid
 
 test:
   imports:
