@@ -19,7 +19,6 @@ NOMAD Archive functionality within a single cohesive application.
 This project provides all necessary artifacts to develop, test,
 deploy, and operate the NOMAD Respository and Archive.
 
-
 Current build status
 ====================
 
