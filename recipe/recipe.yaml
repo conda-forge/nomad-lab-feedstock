@@ -69,6 +69,7 @@ requirements:
     - pathvalidate
     - fsspec
     - molid
+    - msglc
 
 tests:
   - python:
