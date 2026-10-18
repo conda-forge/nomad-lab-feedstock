@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: nomad-lab
-  version: "1.4.3"
+  version: "2.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: d95c75e4b43080f118b9e29ec9f641701c6ccb395a7d431a16292456990d1687
+  sha256: d61c08bac59f614d31db63c5a537a23e7e30b081d30ed822501b09809eae844e
   patches:
     - pyspy.patch
 
